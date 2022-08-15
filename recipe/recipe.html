@@ -7,11 +7,46 @@
     <title>Document</title>
     <style>
         body{
-            padding:15px ;
+           
+            
+        }
+        .main{
+           height: 200px;
+            background-color:rgb(254, 250, 250);
+        }
+        .big{
+            width: calc(99% - 200px);
+            background-color:white;
+           
+            
+        }
+        .small{
+            color: white;
+            background-color: black;
+            text-align: center;
+            text-rendering: initial;
+            width:150px;
+            margin-top: 10px;
+          
+        }
+        .common{
+            display: inline-block;
+            border-radius: 5px;
+            border: 1px ;
+            height: 70px;
+            margin-left: 15px;
         }
     </style>
 </head>
 <body>
-    <div> </div>
+ <div class="main">
+    <h1 style="border-bottom: 1px solid red;">Recipe smth</h1>
+    
+    <div class="big common">Recipe Meistr</div>
+    <div class="small common">Add Recipe</div>
+    <div class="pic">
+        <img src="" alt="recipe in html">
+    </div>
+ </div>
 </body>
 </html>
