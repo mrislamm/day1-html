@@ -6,20 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+        }
         
         .main{
-           height: 16cm;
-           background-color:#f4f4ee;
+           
+           background-color:rgb(250, 249, 249);
            border-radius: 5px;
            display: inline-block;
-           position: relative;
-           
+           width: 100%;
         }
         .big{
-            width: calc(99% - 200px);
-            background-color:white;
-           
-            
+            width:75%;
+            background-color:white; 
         }
         .small{
             color: white;
@@ -39,13 +38,22 @@
             padding: 7px;
             margin-top:10px;
         }
-        .pic{
-            margin: 15px;
-            
+        .image-container{
+            width: 380px;
+            height: 340px;
+            border: 1px solid gray;
+            border-radius: 4px;
+            margin-top: 20px;
+            background-color: rgb(236, 236, 236);
+        }
+        .ct{
+            display:inline-block;
+            margin-left: 40px;
         }
     </style>
 </head>
 <body>
+    <!--First line top-->
  <div class="main">
     <br>
     <h1 style="border-bottom: 1px solid red; margin: 20px;">Recipe Meister</h1>
@@ -53,23 +61,33 @@
     <div class="big common"><b>FIND RECIPES</b></div>
     <div class="small common">Add Recipe</div>
     <span style="display: inline-block;">
- <div class="pic">
-        <img src="./food.pnj.jpg " alt="recipe in html" width="30%" height="30%">
-
-     <div style="background-color:lightgray; width: 30%; height: 3cm;">
-
-        <div style="font-size:40px ;"><b>strqwberry Cake </b></div>
-        <div>dbdwebdkwjnjdjnskdncjs jdsncjd cjdkcndk kdsj </div>
-        <br>
-        <span style="border:1px solid black; padding: 4px; background-color: gray;">CAKES</span>
-        <span style="border:1px solid black; padding: 4px; background-color: gray;">DESERTS</span>
-
+      <br>
+        <!--SECOND LINE PICTURE-->
+        <div class="ct">
+        <div class="image-container">
+            <img src="./food.pnj.jpg" alt="inside" height="210px" width="100%">
+            <div style="margin: 10px;">
+            <div style="font-size: 25px; font-weight:bold;">Islam's King size Burger</div>
+            <div>This King size Burger is perfect choice for Burger Lovers.Enjoy it!</div>
+                <br>
+                <span style="border:1px solid black; padding: 3px; background-color: gray;" >CAKES</span>
+                 <span style="border:1px solid black; padding: 3px; background-color: gray;">DESERTS</span>
+                </div>
+            </div>
+            <!--SCECOND PICTURE-->
+            <div class="image-container">
+                <img src="./food.pnj.jpg" alt="inside" height="210px" width="100%">
+                <div style="margin: 10px;">
+                <div style="font-size: 25px; font-weight:bold;">Islam's King size Burger</div>
+                <div>This King size Burger is perfect choice for Burger Lovers.Enjoy it!</div>
+                    <br>
+                    <span style="border:1px solid black; padding: 3px; background-color: gray;" >CAKES</span>
+                     <span style="border:1px solid black; padding: 3px; background-color: gray;">DESERTS</span>
+                    </div>
+                </div>
     </div>
-    
 </div>
 
-</span>
-</div>
  </body>
 </body>
 </html>
