@@ -5,8 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    *{
+        box-sizing: border-box;
+    }    
+    header{
+        background-color: lightgray;
+        padding: 35px;
+        text-align: center;
+        font-size: large;
+        color: aqua;
+    }
+    li>button{
+        background-color: orange;
+        padding: 10px;
+        margin: 8px;
+        border-radius: 3px;
+        animation:blinking 2s linear;
+    }
+    nav{
+        float: left;
+        width: 27%;
+        height: 10cm;
+        background-color:white;
+        transition: 8s;
+    }
+    nav:hover{
+        border-radius: 5px;
+        border: 0;
+        background-color: rgb(214, 196, 173);
+    }
+    article{
+        float: right;
+        
+
+    }
+    </style>
 </head>
 <body>
+    <header>CSS tutorials!</header>
+    <section>
+        <nav>
+            <ol type="1">
+                <li><button><a href="#"> HTML</a></button></li>
+                <li><button><a href="#"> CSS</a></button></li>
+                <li><button><a href="#"> JAVA</a></button></li>
+                <li><button><a href="#"> C++</a></button></li>
+            </ol>
+        </nav>
+        <article>
+            <h1>HTML</h1>
+            <p>HTML is abrvation of Hyper Text Markup Language which is mainly used for
+                 web devoloping in recent decades across the world.</p>
+        </article>
+    </section>
     
 </body>
 </html>
