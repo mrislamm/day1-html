@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(62, 59, 59);
+        }
+        .main{
+            height: 300px;
+            width: 500px;
+            margin: 9cm;
+            border-radius: 10px;
+            background-color: black;
+        }
+        .inputs>input{
+            margin-top: 14px;
+            display: block;
+            margin-left:1.7cm;
+            border-radius: 12px;
+            padding: 10px;
+            width: 7cm;
+            height: 27px;
+        }
+        .innputs{
+            margin-top: 1cm;
+        }
+        .inputs>input:hover{
+            width: 8cm;
+            border: 2px solid greenyellow;
+            height: 30px;
+        }
+        .button-container{
+            margin-top: 20px ;
+            margin-left: 6.5cm ;
+        }
+        .button-container>button{
+            padding: 10px;
+            margin-left: 20px;
+            border-radius: 5px;
+            transition: 1s;
+            width: 2cm;
+        }
+        .button-container>button:hover{
+            background-color: rgb(43, 182, 182);
+            width: 3cm;
+        }
+        label{
+            color: white;
+        }
+        .radio-container{
+            margin-top: 17px;
+            margin-left:2cm ;
+            font-size: 13px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <br>
+       <div class="inputs">
+        <input type="email" placeholder="Email">
+        <br>
+        <input type="password" placeholder="Password">
+       </div>
+       <div class="radio-container">
+        <input type="checkbox">
+        <label>I agree the terms&conditions</label>
+        <br>
+        <input type="checkbox">
+        <label>I agree the privacy policy</label>
+       </div>
+       <div class="button-container">
+        <button type="button">Cancel</button>
+        <button type="submit">Continue</button>
+       </div>
+       
+    </div>
+</body>
+</html>

@@ -15,50 +15,75 @@
         text-align: center;
         font-size: large;
         color: aqua;
+        animation: blinking 7s infinite;
     }
-    li>button{
-        background-color: orange;
-        padding: 10px;
-        margin: 8px;
-        border-radius: 3px;
-        animation:blinking 2s linear;
+    @keyframes blinking{
+        0%{
+          background-color:red;
+          left: 0;
+          top: 0;
+        }
+        50%{
+            background-color: aqua;
+            transform: scale(1);
+            bottom: 0;
+            right: 0;
+        }
+        100%{
+            background-color: darkred;
+            top: 0;
+            right: 0;
+        }
     }
-    nav{
-        float: left;
-        width: 27%;
-        height: 10cm;
-        background-color:white;
-        transition: 8s;
+  
+    .loader{
+        border: 10px solid gray;
+        height: 50px;
+        width: 50px;
+        border-top: 10px solid blue;
+        border-radius: 50%;
+        animation: spin 0.5s infinite linear;
     }
-    nav:hover{
-        border-radius: 5px;
-        border: 0;
-        background-color: rgb(214, 196, 173);
+    @keyframes spin{
+        0%{
+            rotate: 0;
+        }
+        100%{
+            rotate: 360deg;
+        }
     }
-    article{
-        float: right;
-        
+    .ani{
+        border: 6px solid;
+        height: 90px;
+        width: 170px;
+        background-color: rgb(76, 62, 62);
+        color: white;
+        text-align: center;
+        border-radius: 7px;
+        animation: spinn 1.5s infinite ;
+    }
+    @keyframes spinn{
+        0%{
+            border: 6px solid black ; 
+        }
+        50%{
+            border: 6px solid aqua ;
+        }
+        100%{
+            border: 6px solid rgb(39, 138, 95);
+        }
+    }
 
-    }
     </style>
 </head>
 <body>
     <header>CSS tutorials!</header>
-    <section>
-        <nav>
-            <ol type="1">
-                <li><button><a href="#"> HTML</a></button></li>
-                <li><button><a href="#"> CSS</a></button></li>
-                <li><button><a href="#"> JAVA</a></button></li>
-                <li><button><a href="#"> C++</a></button></li>
-            </ol>
-        </nav>
-        <article>
-            <h1>HTML</h1>
-            <p>HTML is abrvation of Hyper Text Markup Language which is mainly used for
-                 web devoloping in recent decades across the world.</p>
-        </article>
-    </section>
-    
+    <marquee behavior="text-align" direction="right">UR sen zor va eng fast web devolpersan va eng boy ham</marquee>
+<div class="loader">
+
+</div>
+<div class="ani">
+    <h1>Clic Here</h1>
+</div>
 </body>
 </html>

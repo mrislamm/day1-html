@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-color: black;
+      
+      }
+      
+      .meter{
+        width:  600px;
+        height: 30px;
+        background:linear-gradient( to right, green,rgb(67, 234, 51),red,rgb(195, 91, 91)) ;
+        border-radius: 13px;
+        margin: 7.5cm; 
+        animation: slide 1s infinite linear;
+      }
+      @keyframes slide{
+        0%{
+            background:linear-gradient( to right, green,rgb(67, 234, 51),red,rgb(195, 91, 91)) ; 
+        }
+        100%{
+            background:linear-gradient( to left, green,rgb(67, 234, 51),red,rgb(195, 91, 91)) ;
+        }
+      }
+    </style>
+</head>
+<body>
+  <div class="meter">
+
+  </div>
+</body>
+</html
